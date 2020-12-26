@@ -22,8 +22,30 @@
 document.addEventListener('deviceready', onDeviceReady, false);
 
 function onDeviceReady() {
-    // Cordova is now initialized. Have fun!
+    xmlhttp = new XMLHttpRequest();
+    var url = "https://antarakata99.000webhostapp.com/mobile/index.php";
+    var post, html = "";
+    xmlhttp.open("GET", url, true);
+    xmlhttp.onreadystatechange = function () {
+        document.getElementById("indexposts").innerHTML = 'LOADING ...';
+        if ((xmlhttp.readyState == 4) && (xmlhttp.status == 200)) {
+            post = JSON.parse(xmlhttp.responseText);
+            for (x in post) {
+                html += "<div class=\"col-sm-3 float-left card text-white bg-dark index-content mb-2 mt-2 ml-3 mr-3 p-2\">";
+                html += "<div>";
+                html += "<h1 class=\"mt-1 post-title\">" + post[x].judul + "</h1>";
+                html += "<img src=\"https://antarakata99.000webhostapp.com/asset/img/blog/" + post[x].file_gambar + "\" class=\"img-fluid rounded mb-2\" alt=\"gambar1\" style=\"width:100%\">";
+                html += "<p class=\"teks-justify post-summary\">" + post[x].isi_post.substr(0, 140) + "....</p>";
+                html += "</div>";
+                html += "<div class=\"mb-2\"><button type=\"button\" onclick=\"window.location.href='detail.html#id/" + post[x].idpost + "';\" class=\"btn btn-warning tombol-detail\">Read More . .</button></div>";
+                html += "<div class=\"card-footer\">";
+                html += "<p>Posted on " + post[x].tgl_insert + " by <a href=\"#\" class=\"id-penulis\">" + post[x].nama + "</a></p>";
+                html += "</div></div>";
+            }
+            document.getElementById("indexposts").innerHTML = html;
 
-    console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
-    document.getElementById('deviceready').classList.add('ready');
+        }
+        return false;
+    }
+    xmlhttp.send(null);
 }

@@ -1,0 +1,53 @@
+body {
+   background-color: black;
+}
+
+.navigasi a {
+   text-decoration: none;
+   color: #e17d07;
+}
+
+.link-active {
+   color: white !important;
+}
+
+/* navigasi */
+.navigasi {
+   position: fixed;
+   bottom: 0;
+   background-color: #252525;
+}
+
+.nav-btn {
+   color: #e17d07;
+}
+
+/* index */
+.indexposts {
+   font-family: 'Montserrat', sans-serif;
+}
+
+.index-content {
+   color: #1b1b1b !important;
+   padding: 5px;
+   margin: 2px 2px 2px 2px;
+}
+
+.index-content a {
+   text-decoration: none;
+   font-weight: bold;
+   color: #e17d07;
+}
+
+.post-title {
+   color: white !important;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 600;
+   text-transform: capitalize;
+}
+
+.post-summary {
+   text-transform: none;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 300;
+}
