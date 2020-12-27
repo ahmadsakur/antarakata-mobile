@@ -31,7 +31,7 @@ function onDeviceReady() {
         if ((xmlhttp.readyState == 4) && (xmlhttp.status == 200)) {
             post = JSON.parse(xmlhttp.responseText);
             for (x in post) {
-                html += "<div class=\"col-sm-3 float-left card text-white bg-dark index-content mb-2 mt-2 ml-3 mr-3 p-2\">";
+                html += "<div class=\"col-sm-3 float-left card text-dark bg-dark index-content mb-2 mt-2 ml-3 mr-3 p-2\">";
                 html += "<div>";
                 html += "<h1 class=\"mt-1 post-title\">" + post[x].judul + "</h1>";
                 html += "<img src=\"https://antarakata99.000webhostapp.com/asset/img/blog/" + post[x].file_gambar + "\" class=\"img-fluid rounded mb-2\" alt=\"gambar1\" style=\"width:100%\">";

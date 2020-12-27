@@ -39,6 +39,10 @@ body {
    color: #e17d07;
 }
 
+.index-content p {
+   color: white;
+}
+
 .post-title {
    color: white !important;
    font-family: 'Montserrat', sans-serif;
@@ -49,5 +53,19 @@ body {
 .post-summary {
    text-transform: none;
    font-family: 'Montserrat', sans-serif;
+   color: white !important;
    font-weight: 300;
+}
+
+/* Kategori */
+.tombol-kategori button {
+   display: block;
+   width: 100%;
+}
+
+/* Pencarian */
+.text-empty-query h3 {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 20px;
+   font-weight: 600;
 }
