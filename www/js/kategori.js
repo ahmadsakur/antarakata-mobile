@@ -1,10 +1,10 @@
-function search(keyword) {
+function kategori(id) {
    xmlhttp = new XMLHttpRequest();
-   var url = "https://antarakata99.000webhostapp.com/mobile/search.php?keyword=" + keyword;
+   var url = "https://antarakata99.000webhostapp.com/mobile/kategori.php?idkategori=" + id;
    var post, html = "";
    xmlhttp.open("GET", url, true);
    xmlhttp.onreadystatechange = function () {
-      document.getElementById("searchpost").innerHTML = 'LOADING ...';
+      document.getElementById("kategoripost").innerHTML = 'LOADING ...';
       if ((xmlhttp.readyState == 4) && (xmlhttp.status == 200)) {
          post = JSON.parse(xmlhttp.responseText);
          if (isEmpty(post)) {
@@ -25,7 +25,7 @@ function search(keyword) {
                html += "</div></div>";
             }
          }
-         document.getElementById("searchpost").innerHTML = html;
+         document.getElementById("kategoripost").innerHTML = html;
       }
       return false;
    }

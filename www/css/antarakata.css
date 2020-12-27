@@ -48,6 +48,7 @@ body {
    font-family: 'Montserrat', sans-serif;
    font-weight: 600;
    text-transform: capitalize;
+   text-align: left;
 }
 
 .post-summary {

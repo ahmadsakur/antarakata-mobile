@@ -16,8 +16,11 @@
    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
-
+   <style>
+      body {
+         background-color: #000;
+      }
+   </style>
    <title>antarakata</title>
 </head>
 
@@ -25,21 +28,21 @@
    <div class="container">
       <div class="row tombol-kategori">
          <div class="col-6">
-            <button class="btn btn-outline-warning btn-lg mt-2">Kategori 1</button>
+            <button class="btn btn-outline-warning btn-lg mt-2" onclick="kategori(1)">Hiburan</button>
          </div>
          <div class="col-6">
-            <button class="btn btn-outline-warning btn-lg mt-2">Kategori 2</button>
+            <button class="btn btn-outline-warning btn-lg mt-2" onclick="kategori(2)">Traveling</button>
          </div>
       </div>
       <div class="row tombol-kategori">
          <div class="col-6">
-            <button class="btn btn-outline-warning btn-lg mt-2">Kategori 3</button>
+            <button class="btn btn-outline-warning btn-lg mt-2" onclick="kategori(3)">Olahraga</button>
          </div>
          <div class="col-6">
-            <button class="btn btn-outline-warning btn-lg mt-2">Kategori 4</button>
+            <button class="btn btn-outline-warning btn-lg mt-2" onclick="kategori(5)">Teknologi</button>
          </div>
       </div>
-      <div class="indexposts" id="indexposts"></div>
+      <div class="kategoripost" id="kategoripost"></div>
    </div>
    <!-- Navigasi -->
    <div class="container-fluid navigasi text-center">

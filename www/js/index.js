@@ -37,7 +37,7 @@ function onDeviceReady() {
                 html += "<img src=\"https://antarakata99.000webhostapp.com/asset/img/blog/" + post[x].file_gambar + "\" class=\"img-fluid rounded mb-2\" alt=\"gambar1\" style=\"width:100%\">";
                 html += "<p class=\"teks-justify post-summary\">" + post[x].isi_post.substr(0, 140) + "....</p>";
                 html += "</div>";
-                html += "<div class=\"mb-2\"><button type=\"button\" onclick=\"window.location.href='detail.html#id/" + post[x].idpost + "';\" class=\"btn btn-warning tombol-detail\">Read More . .</button></div>";
+                html += "<div class=\"mb-2\"><button type=\"button\" onclick=\"detail(" + post[x].idpost + ")\" class=\"btn btn-warning tombol-detail\">Read More . .</button></div>";
                 html += "<div class=\"card-footer\">";
                 html += "<p>Posted on " + post[x].tgl_insert + " by <a href=\"#\" class=\"id-penulis\">" + post[x].nama + "</a></p>";
                 html += "</div></div>";
