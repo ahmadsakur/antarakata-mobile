@@ -2,6 +2,11 @@ body {
    background-color: black;
 }
 
+hr {
+   background-color: #fff;
+   color: white !important;
+}
+
 .navigasi a {
    text-decoration: none;
    color: #e17d07;
@@ -73,9 +78,10 @@ body {
 
 /* detail */
 .detail-author {
-   color: white;
+   color: #e17d07;
    font-family: 'Montserrat', sans-serif;
-   font-size: 10px;
+   font-size: 12px;
+   text-transform: capitalize;
 }
 
 .detail-artikel {

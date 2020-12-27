@@ -61,10 +61,10 @@ function detail(idpost) {
             post = JSON.parse(xmlhttp.responseText);
             for (x in post) {
                 html += "<h1 class=\"post-title mt-3 p-1\">" + post[x].judul + "</h1>"
-                html += "<p class\"detail-author p-1\">Wriiten by" + post[x].nama + "</p>"
+                html += "<p class=\"detail-author p-1\">" + post[x].nama + "</p>"
                 html += "<hr>"
                 html += "<img src=\"https://antarakata99.000webhostapp.com/asset/img/blog/" + post[x].file_gambar + "\" class=\"img-fluid rounded mb-2\" alt=\"gambar1\" style=\"width:100%\">";
-                html += "<p class\"detail-artikel p-1\">" + post[x].isi_post + "</p>"
+                html += "<p class=\"detail-artikel p-1\">" + post[x].isi_post + "</p>"
             }
             document.getElementById("indexposts").innerHTML = html;
 
