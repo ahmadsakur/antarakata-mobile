@@ -70,3 +70,18 @@ body {
    font-size: 20px;
    font-weight: 600;
 }
+
+/* detail */
+.detail-author {
+   color: white;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 10px;
+}
+
+.detail-artikel {
+   text-align: justify;
+   font-family: 'Montserrat', sans-serif;
+   color: white;
+   text-decoration: none;
+   text-transform: none;
+}
