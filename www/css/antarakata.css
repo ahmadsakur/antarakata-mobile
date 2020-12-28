@@ -5,6 +5,12 @@ body {
 hr {
    background-color: #fff;
    color: white !important;
+   margin-bottom: 15px;
+}
+
+.separator {
+   height: 30px;
+   background: none;
 }
 
 .navigasi a {
@@ -22,7 +28,7 @@ hr {
    position: fixed;
    bottom: 0;
    margin-top: 30px;
-   background-color: #252525;
+   background: none;
 }
 
 .nav-btn {
@@ -95,8 +101,15 @@ hr {
 }
 
 .card-komentar {
-   text-transform: lowercase;
    font-family: 'Montserrat', sans-serif;
    margin-bottom: 20px;
+}
 
+.card-komentar p {
+   text-transform: lowercase;
+}
+
+.card-komentar h5 {
+   text-transform: capitalize;
+   font-weight: 500;
 }
