@@ -18,8 +18,10 @@ hr {
 
 /* navigasi */
 .navigasi {
+
    position: fixed;
    bottom: 0;
+   margin-top: 30px;
    background-color: #252525;
 }
 
@@ -90,4 +92,11 @@ hr {
    color: white;
    text-decoration: none;
    text-transform: none;
+}
+
+.card-komentar {
+   text-transform: lowercase;
+   font-family: 'Montserrat', sans-serif;
+   margin-bottom: 20px;
+
 }
