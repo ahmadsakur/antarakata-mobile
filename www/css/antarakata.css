@@ -8,16 +8,16 @@ hr {
    margin-bottom: 15px;
 }
 
-.separator {
-   height: 30px;
-   background: none;
-}
 
 .navigasi a {
    text-decoration: none;
    color: #e17d07;
 }
-
+/* Separator */
+.separator {
+   height: 30px;
+   background: none;
+}
 .link-active {
    color: white !important;
 }
