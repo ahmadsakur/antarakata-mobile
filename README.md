@@ -16,7 +16,7 @@ https://github.com/ahmadsakur/antarakata-mobile <br>
 antarakata.epizy.com <br>
 antarakata99.000webhostapp.com <br>
 
-3. Link Aplikasi
+3. Link Aplikasi <br>
 http://bit.ly/AntaraKata-Apk
 
 
