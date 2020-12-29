@@ -6,7 +6,7 @@ Project ini dibuat dalam rangka memenuhi tugas mata kuliah Pembelajaran Berbasis
 Muhammad Dimas Andhika 	24060118130071\
 Akbar Falih Husodo  		24060118130068\
 Ahmad Sakur	  		      24060118120030\
-Rizki Cahya Pradana  		24060118130070\
+Rizki Cahya Pradana  		24060118130070
 
 # Direktori Project
 1. Link Repositori\
@@ -17,6 +17,6 @@ antarakata.epizy.com <br>
 antarakata99.000webhostapp.com <br>
 
 3. Link Aplikasi
-drive................
+http://bit.ly/AntaraKata-Apk
 
 
